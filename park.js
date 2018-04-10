@@ -27,4 +27,13 @@ Park.prototype.getAllDinoaursWithOffspringGreaterThan = function (threshold) {
   return selected_dinos;
 };
 
+Park.prototype.getNumberOfDinosaursAfterYears = function (years) {
+  let dino_count = 0;
+  for (i = 0; i < this.enclosure.length; i++) {
+    let dino = this.enclosure[i]
+    dino_count += (1 + dino.offspring) ** years;
+  }
+  return dino_count;
+}
+
 module.exports = Park;
