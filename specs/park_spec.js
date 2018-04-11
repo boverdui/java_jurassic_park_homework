@@ -4,7 +4,10 @@ const Park = require('../park.js')
 
 describe('Park', function () {
 
-  let dinosaur;
+  let dino1;
+  let dino2;
+  let dino3;
+  let dino4;
   let park;
 
   beforeEach(function() {
